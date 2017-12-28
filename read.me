@@ -1,0 +1,5 @@
+#打包项目
+mvn clean install
+
+#找出 mock-server/target/ 下的  mock-server.jar包，执行jar包，端口 8080
+java  -Ddb.jdbc_url=jdbc:mysql://192.168.212.25/mock_op  -Ddb.username=mock  -Ddb.password=mock2017  -jar  mock-server.jar

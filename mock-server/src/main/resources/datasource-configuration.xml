@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD SQL MAP Config 3.1//EN" 
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!--设置属性 -->
+	<settings>
+		<setting name="cacheEnabled" value="true" />
+		<setting name="lazyLoadingEnabled" value="true" />
+		<setting name="localCacheScope" value="SESSION" />
+		<setting name="jdbcTypeForNull" value="OTHER" />
+		<setting name="callSettersOnNulls" value="false" />
+		<setting name="lazyLoadTriggerMethods" value="equals,clone,hashCode,toString" />
+		
+		<!-- 允许 JDBC 支持生成的键。需要适合的驱动。如果设置为 true 则这个设置强制生成的键被使用，尽管一些驱动拒绝兼容但仍然有效（比如 Derby） -->
+		<setting name="useGeneratedKeys" value="true" />
+		<!-- 配置默认的执行器。SIMPLE 执行器没有什么特别之处。REUSE 执行器重用预处理语句。BATCH 执行器重用语句和批量更新  -->
+		<setting name="defaultExecutorType" value="REUSE" />
+		<!-- 设置超时时间，它决定驱动等待一个数据库响应的时间。  -->
+		<setting name="defaultStatementTimeout" value="25000"/> 
+		<!-- 下划线与驼峰式命名规则的映射 -->
+		<setting name="mapUnderscoreToCamelCase" value="true" />
+	</settings>
+	<!-- 类型别名 -->
+	<!-- 
+	<typeAliases>
+		<typeAlias alias="customer"
+			type="com.baibei.expand.coenter.cstomer.entity.Customer" />
+		<typeAlias alias="order"
+			type="com.baibei.expand.coenter.order.entiy.Order" />
+		<typeAlias alias="tradeDay"
+			type="com.baibei.expand.coenter.tradeDay.entiy.TradeDay" />
+		<typeAlias alias="memberunit"
+			type="com.baibei.expand.coenter.memberunit.entiy.Memberunit" />
+		<typeAlias alias="product"
+			type="com.baibei.expand.coenter.product.entiy.Product" />
+		<typeAlias alias="coupon"
+			type="com.baibei.expand.coenter.coupon.entiy.Coupon" />
+		<typeAlias alias="actionRecord"
+			type="com.baibei.expand.coenter.activity.entity.ActionRecord" />
+		<typeAlias alias="customerCoupon"
+			type="com.baibei.expand.coenter.cstomer.entity.CustomerCoupon" />
+		<typeAlias alias="wechatAttention"
+			type="com.baibei.expand.coenter.activity.entity.WechatAttention" />
+		<typeAlias alias="sendOrder" 
+			type="com.baibei.expand.coenter.order.entiy.SendOrder" />
+		<typeAlias alias="profitTopOrder" 
+			type="com.baibei.expand.coenter.order.entiy.ProfitTopOrder" />
+		<typeAlias alias="ActionDao" 
+			type="com.baibei.expand.coenter.activity.entity.Actions" />
+		<typeAlias alias="RankingDao" 
+			type="com.baibei.expand.coenter.activity.entity.Actions" />
+			<typeAlias alias="appInfo"
+			type="com.baibei.expand.coenter.wetchat.entity.AppInfo" />
+		<typeAlias alias="lookupItems"
+			type="com.baibei.expand.coenter.lookupitems.entity.LookupItems" />
+	</typeAliases> -->
+</configuration>
